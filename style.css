@@ -1,0 +1,114 @@
+/* 
+## Colors 
+
+- Green: hsl(75, 94%, 57%)
+
+- White: hsl(0, 0%, 100%)
+
+- Grey 700: hsl(0, 0%, 20%)
+- Grey 800: hsl(0, 0%, 12%)
+- Grey 900: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700
+*/
+
+
+/* Importing 'Inter' Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.attribution { font-size: 12px; text-align: center; color: hsl(0, 0%, 100%); margin-top: 10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.avatar {
+    border-radius: 50%;
+    max-width: 25%;
+    margin: 0 0 6px 0;
+}
+
+.button {
+    background: hsl(0, 0%, 20%);
+    border-style: none;
+    border-radius: 6px;
+    padding: 12px 0 12px 0;
+    margin: 8px 0 8px 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.button:hover {
+    background: hsl(75, 94%, 57%);
+}
+
+.button:hover .button-text{
+    color: hsl(0, 0%, 8%);
+}
+
+.button-text {
+    transition: color 0.5s;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    max-width: 300px;
+}
+
+.description {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 25px 0 16px 0;
+    text-align: center;
+}
+
+.location {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(75, 94%, 57%);
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.name, .description, a {
+    color: hsl(0, 0%, 100%);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: hsl(0, 0%, 8%);
+}
